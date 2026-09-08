@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "skill": "usability-test-plan-cn",
+  "runs_per_query": 3,
+  "trigger_threshold": 0.5,
+  "queries": [
+    {
+      "q": "明天先测新版结账页，帮我做一份快速首轮可用性任务和观察表",
+      "expect": "trigger",
+      "split": "train"
+    },
+    {
+      "q": "为企业后台的发起者、审批者和管理员设计完整可用性测试计划",
+      "expect": "trigger",
+      "split": "train"
+    },
+    {
+      "q": "这个实名支付流程怎么做高风险可用性测试，参与者不能碰真实银行卡",
+      "expect": "trigger",
+      "split": "validation"
+    },
+    {
+      "q": "请根据新手和熟练用户、安卓和 iOS 的覆盖差异规划首批样本与停止条件",
+      "expect": "trigger",
+      "split": "validation"
+    },
+    {
+      "q": "我们还不知道该做访谈、问卷还是可用性测试，先帮我选研究方法",
+      "expect": "no-trigger",
+      "split": "train",
+      "near_miss_of": "product-research-cn"
+    },
+    {
+      "q": "分析这 500 份满意度问卷，比较不同城市用户的差异",
+      "expect": "no-trigger",
+      "split": "train",
+      "near_miss_of": "measure-survey-analysis-cn"
+    },
+    {
+      "q": "对这 12 份探索性访谈逐字稿做开放编码和负例分析",
+      "expect": "no-trigger",
+      "split": "validation",
+      "near_miss_of": "interview-analyst-cn"
+    },
+    {
+      "q": "审查这个页面的颜色、排版和视觉层级是否专业",
+      "expect": "no-trigger",
+      "split": "validation",
+      "near_miss_of": "ui-design-review"
+    },
+    {
+      "q": "深色模式 A/B 测试提升了转化率，帮我分析实验结果",
+      "expect": "no-trigger",
+      "split": "validation",
+      "near_miss_of": "experiment-analysis"
+    }
+  ]
+}
