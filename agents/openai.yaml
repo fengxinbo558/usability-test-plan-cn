@@ -1,0 +1,4 @@
+interface:
+  display_name: "可用性测试计划"
+  short_description: "设计可执行的可用性任务、招募、主持、记录与停止方案"
+  default_prompt: "请使用 $usability-test-plan-cn 为这个关键流程制定一份可直接执行的可用性测试计划。"
